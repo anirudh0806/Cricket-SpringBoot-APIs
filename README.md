@@ -1,4 +1,4 @@
-# Cricket Management System
+# APIs 
 
 A RESTful application for managing cricket player data using Spring Boot and MongoDB.
 
@@ -72,10 +72,9 @@ spring.data.mongodb.database=cricketdb
 ```bash
 curl -X POST -H "Content-Type: application/json" -d '{
   "name": "Virat Kohli",
+  "age": 36,
   "country": "India",
   "role": "Batsman",
-  "battingAverage": 53.5,
-  "wicketsTaken": 0
 }' http://localhost:8080/api/cricketers
 ```
 
